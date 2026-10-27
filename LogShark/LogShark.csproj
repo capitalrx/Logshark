@@ -48,11 +48,6 @@
     <EmbeddedResource Remove="TestLogs\**" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\launchSettings.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Workbooks" />
   </ItemGroup>
   <ItemGroup>
