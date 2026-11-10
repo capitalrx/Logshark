@@ -75,7 +75,7 @@
         "3": "Plugins listed in 'PluginsToExcludeFromDefaultSet' will be excluded when 'All' plugins are requested for the run. Same format as 'PluginsToRunByDefault'"
       },
       "PluginsToRunByDefault": "",
-      "PluginsToExcludeFromDefaultSet": "Replayer"
+      "PluginsToExcludeFromDefaultSet": "Replayer;Hyper"
     },
     "Apache": {
       "IncludeGatewayChecks": true

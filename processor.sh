@@ -8,7 +8,7 @@ aws s3 cp "${S3_INPUT_URI}" input.zip
 
 echo "Running LogShark..."
 
-dotnet /app/out/LogShark.dll input.zip --plugins "Art;Apache;Backgrounder;Bridge;ClusterController;Config;DataServer;Filestore;Netstat;Prep;Postgres;Replayer;ResourceManager;SearchServer;ServerTelemetry;TabadminController;Vizportal;VizqlDesktop"
+dotnet /app/out/LogShark.dll input.zip
 
 if [[ ! -d "./Output" ]]; then
     echo "Output directory was not created."
