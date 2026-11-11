@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim
+FROM mcr.microsoft.com/dotnet/sdk:10.0-resolute
 WORKDIR /app
 COPY . ./
 
@@ -11,7 +11,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     libgdiplus \
     && rm -rf /var/lib/apt/lists/*
 
-RUN dotnet publish "LogShark/LogShark.csproj" -r linux-x64 --self-contained true -c Release /p:Version=4.2.5 /p:UpdateConfigurationSchema=true -o out
+RUN dotnet publish "LogShark/LogShark.csproj" -r linux-x64 --self-contained true -c Release /p:Version=4.3.0 /p:UpdateConfigurationSchema=true -o out
 
 WORKDIR /app
 
