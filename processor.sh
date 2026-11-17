@@ -20,3 +20,5 @@ aws s3 cp ./Output/ "${S3_OUTPUT_URI}${NOW}/" \
     --recursive
 
 echo "Done."
+
+exit 0
